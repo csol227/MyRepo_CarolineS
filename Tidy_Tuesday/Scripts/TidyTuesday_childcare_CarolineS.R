@@ -83,4 +83,4 @@ Income_by_State <- ggplot(median_prices, aes(x = reorder(state_abbr, mhi_2018), 
                      breaks = seq(0, 90000, 10000)) #so we can break the x-axis by 10 thousands
 
 # save plot in output folder using here function
-ggsave(here("Output", "Income_by_State.png"), plot = Income_by_State, width = 11, height = 10)
+ggsave(here("Tidy_Tuesday","Output", "Income_by_State.png"), plot = Income_by_State, width = 11, height = 10)
